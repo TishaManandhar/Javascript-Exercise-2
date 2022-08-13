@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    h1:hover{
+        cursor:pointer;
+    }
+
+    button{
+        background-color: pink;
+        height:50px;
+        width:130px;
+        font-size:20px;
+    }
+</style>
+</head>
+<body>
+    <h1>CLick to reveal!</h1>
+    <h1 id = "click">Day</h1>
+    <button id = "press">Date & Time</button>
+    <script>
+        var text = document.getElementById("click");
+        click.onclick = function(){
+            click.innerHTML = "Today is Sunday"
+        };
+
+        var text2 = document.getElementById("press");
+        press.onclick = function(){
+            const date = new Date();
+
+            // get the date as a string
+            const n = date.toDateString();
+
+            // get the time as a string
+            const time = date.toLocaleTimeString();
+
+            // display date
+            document.write('Date: ' + n +"<br></br>");
+
+            // display time
+            document.write('Time: ' + time);
+
+        }
+
+    </script>
+</body>
+</html>
